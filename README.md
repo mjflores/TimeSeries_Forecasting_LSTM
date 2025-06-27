@@ -1,6 +1,6 @@
 # Forecasting_LSTM
 
-This program performs time series forecasting using an LSTM (Long Short-Term Memory) model on a simulated univariate dataset. 
+This program performs time series forecasting using an LSTM (Long Short-Term Memory) model on a simulated multivariate dataset. 
 It applies a supervised learning approach by transforming the time series into input-output pairs based on a specified window size. 
 The model is trained to predict the next value in the sequence, making it a one-step-ahead forecast. This setup is particularly 
 useful for capturing temporal dependencies and trends within the data. The simulation allows for controlled experimentation and 
@@ -12,18 +12,10 @@ atmospheric pressure, temperature, and wind speed.
 
 The generator creates realistic data by mimicking daily and yearly cycles, adding trends, and incorporating random noise.
 
-# Forecasting_LSTM
+# LSTM model
+The modelo_LSTM.py file contains the core classes and logic for time series forecasting using an LSTM (Long Short-Term Memory) neural network. It includes:
 
-Forecasting_LSTM is a Python project that demonstrates time series forecasting using a Long Short-Term Memory (LSTM) neural network.
-
-Features
-Implements an LSTM model for time series forecasting tasks.
-Provides scripts for data preprocessing, model training, and evaluation.
-Fully written in Python, leveraging deep learning libraries.
-Project Structure
-modelo_LSTM.py: Core script defining and training the LSTM model.
-(Add other scripts or folders as needed)
-Usage
-Prepare your time series dataset.
-Configure and run modelo_LSTM.py to train and evaluate the LSTM model.
-Review the results and adjust model parameters as needed.
+DatasetLSTM: Prepares and normalizes meteorological data (pressure, temperature, wind) for LSTM training, transforming it into supervised learning input-output pairs.
+ModeloLSTM: Defines a custom LSTM network with two stacked layers, dropout regularization, and a fully connected output layer for predicting wind speed.
+EntrenadorLSTM: Manages LSTM model training and evaluation, including early stopping and loss tracking, using PyTorch.
+Use this script to configure, train, and evaluate your LSTM model for multivariate time series forecasting tasks.
