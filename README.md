@@ -15,7 +15,7 @@ The generator creates realistic data by mimicking daily and yearly cycles, addin
 # LSTM model
 The modelo_LSTM.py file contains the core classes and logic for time series forecasting using an LSTM (Long Short-Term Memory) neural network. It includes:
 
-> DatasetLSTM: Prepares and normalizes meteorological data (pressure, temperature, wind) for LSTM training, transforming it into supervised learning input-output pairs.
-> ModeloLSTM: Defines a custom LSTM network with two stacked layers, dropout regularization, and a fully connected output layer for predicting wind speed.
-> EntrenadorLSTM: Manages LSTM model training and evaluation, including early stopping and loss tracking, using PyTorch.
+## DatasetLSTM: Prepares and normalizes meteorological data (pressure, temperature, wind) for LSTM training, transforming it into supervised learning input-output pairs.
+## ModeloLSTM: Defines a custom LSTM network with two stacked layers, dropout regularization, and a fully connected output layer for predicting wind speed.
+## EntrenadorLSTM: Manages LSTM model training and evaluation, including early stopping and loss tracking, using PyTorch.
 Use this script to configure, train, and evaluate your LSTM model for multivariate time series forecasting tasks.
